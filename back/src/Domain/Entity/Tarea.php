@@ -6,7 +6,12 @@ use Domain\ValueObject\TareaId;
 use Domain\ValueObject\FechaEntrega;
 use Domain\ValueObject\Prioridad;
 use Domain\ValueObject\Estado;
+use Domain\ValueObject\FechaInicio;
 
+/**
+ * Clase que representa una tarea en el sistema.
+ * Contiene información sobre el título, descripción, estado, prioridad y fechas de inicio y entrega.
+ */
 class Tarea
 {
     private TareaId $id;
@@ -14,8 +19,8 @@ class Tarea
     private string $descripcion;
     private Estado $estado;
     private Prioridad $prioridad;
+    private ?FechaInicio $fechaInicio;
     private ?FechaEntrega $fechaEntrega;
-    private bool $completada;
 
 
     public function __construct(
@@ -24,7 +29,7 @@ class Tarea
         string $descripcion,
         Estado $estado,
         Prioridad $prioridad,
-        ?FechaEntrega $fechaInicio = null,
+        ?FechaInicio $fechaInicio = null,
         ?FechaEntrega $fechaEntrega = null
     ) {
         $this->id = $id;
@@ -32,7 +37,7 @@ class Tarea
         $this->descripcion = $descripcion;
         $this->estado = $estado;
         $this->prioridad = $prioridad;
-        $this->fechaEntrega = $fechaInicio;
+        $this->fechaInicio = $fechaInicio;
         $this->fechaEntrega = $fechaEntrega;
     }
 
@@ -53,6 +58,9 @@ class Tarea
     }
     public function prioridad(): Prioridad {
         return $this->prioridad;
+    }
+    public function fechaInicio(): ?FechaInicio {
+        return $this->fechaInicio;
     }
     public function fechaEntrega(): ?FechaEntrega {
         return $this->fechaEntrega;
