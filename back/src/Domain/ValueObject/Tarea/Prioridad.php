@@ -4,18 +4,18 @@ namespace Domain\ValueObject\tarea;
 
 
 /**
- * Clase que representa la prioridad de una tarea.
+ * Clase que representa la prioridad de una Tarea.
  * Las prioridades válidas son: BAJA, MEDIA, ALTA.
  */
-class Estado
+class Prioridad
 {
-    private const VALID_PRIORITIES = ['INICIADO', 'SUSPENDIO', 'COMPLETADO', 'CANCELADO'];
+    private const VALID_PRIORITIES = ['BAJA', 'MEDIA', 'ALTA'];
     private string $value;
 
     /**
      * Constructor de la clase Prioridad.
      *
-     * @param string $value La prioridad de la tarea, debe ser una de las constantes válidas.
+     * @param string $value La prioridad de la Tarea, debe ser una de las constantes válidas.
      * @throws \InvalidArgumentException Si el valor no es una prioridad válida.
      */
     public function __construct(string $value)

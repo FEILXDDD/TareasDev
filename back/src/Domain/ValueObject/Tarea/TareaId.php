@@ -5,7 +5,7 @@ namespace Domain\ValueObject\tarea;
 use Symfony\Component\Uid\Uuid;
 
 /**
- * Clase que representa el identificador único de una tarea.
+ * Clase que representa el identificador único de una Tarea.
  * Utiliza UUID para garantizar la unicidad.
  */
 class TareaId

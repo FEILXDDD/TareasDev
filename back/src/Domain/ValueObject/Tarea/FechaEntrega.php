@@ -3,7 +3,7 @@
 namespace Domain\ValueObject\tarea;
 
 /**
- * Clase que representa la fecha de entrega de una tarea.
+ * Clase que representa la fecha de entrega de una Tarea.
  * La fecha debe ser una fecha válida y no puede ser en el pasado.
  */
 class FechaEntrega
