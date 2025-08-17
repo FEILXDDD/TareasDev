@@ -2,11 +2,11 @@
 
 namespace Domain\Entity;
 
-use Domain\ValueObject\TareaId;
-use Domain\ValueObject\FechaEntrega;
-use Domain\ValueObject\Prioridad;
-use Domain\ValueObject\Estado;
-use Domain\ValueObject\FechaInicio;
+use Domain\ValueObject\tarea\Estado;
+use Domain\ValueObject\tarea\FechaEntrega;
+use Domain\ValueObject\tarea\FechaInicio;
+use Domain\ValueObject\tarea\Prioridad;
+use Domain\ValueObject\tarea\TareaId;
 
 /**
  * Clase que representa una tarea en el sistema.

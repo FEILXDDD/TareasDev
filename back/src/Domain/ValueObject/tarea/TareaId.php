@@ -1,6 +1,6 @@
 <?php
 
-namespace Domain\ValueObject;
+namespace Domain\ValueObject\tarea;
 
 use Symfony\Component\Uid\Uuid;
 

@@ -3,7 +3,7 @@
 namespace Domain\Repository;
 
 use Domain\Entity\Tarea;
-use Domain\ValueObject\TareaId;
+use Domain\ValueObject\tarea\TareaId;
 
 interface TareaRepository
 {

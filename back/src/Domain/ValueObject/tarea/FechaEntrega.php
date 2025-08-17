@@ -1,6 +1,6 @@
 <?php
 
-namespace Domain\ValueObject;
+namespace Domain\ValueObject\tarea;
 
 /**
  * Clase que representa la fecha de entrega de una tarea.

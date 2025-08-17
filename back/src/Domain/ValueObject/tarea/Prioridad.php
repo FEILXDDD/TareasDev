@@ -1,15 +1,15 @@
 <?php
 
-namespace Domain\ValueObject;
+namespace Domain\ValueObject\tarea;
 
 
 /**
  * Clase que representa la prioridad de una tarea.
  * Las prioridades válidas son: BAJA, MEDIA, ALTA.
  */
-class Estado
+class Prioridad
 {
-    private const VALID_PRIORITIES = ['INICIADO', 'SUSPENDIO', 'COMPLETADO', 'CANCELADO'];
+    private const VALID_PRIORITIES = ['BAJA', 'MEDIA', 'ALTA'];
     private string $value;
 
     /**
